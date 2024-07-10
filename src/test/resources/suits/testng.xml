@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" parallel="none" thread-count="2" verbose="10">
+
+	<listeners>
+		<listener
+			class-name="kc.io.ReportListeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Parallel Test 1">
+		<classes>
+			<class name="kc.io.tests.LetsKodeitAlertTest" />
+			<!-- <class name="kc.io.tests.ParallelTest" /> -->
+		</classes>
+	</test>
+
+	<test name="Parallel Test 2">
+		<classes>
+			<class name="kc.io.tests.ParallelTest" />
+		</classes>
+	</test>
+</suite>

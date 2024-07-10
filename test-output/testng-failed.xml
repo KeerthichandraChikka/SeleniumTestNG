@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="kc.io.ReportListeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="2" name="Parallel Test 1(failed)" verbose="10">
+    <classes>
+      <class name="kc.io.tests.LetsKodeitAlertTest">
+        <methods>
+          <include name="gobalSetup"/>
+          <include name="wrapupTest"/>
+          <include name="lestKodeit"/>
+          <include name="beforeMethod"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- kc.io.tests.LetsKodeitAlertTest -->
+    </classes>
+  </test> <!-- Parallel Test 1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
